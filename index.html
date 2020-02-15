@@ -1,0 +1,36 @@
+<!-- Build by Mingxuan Xie using Aframe -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>超冠狀病毒</title>
+    <script src="./js/aframe-v1.0.4.min.js"></script>
+    <script src="./js/hyper-move.js"></script>
+    <script src="./js/noise.js"></script>
+    <script src="./js/aframe-look-at-component.min.js"></script>
+    <script src="./js/aframe-particle-system-component.min.js"></script>
+    <script scr="./js/click-url.js"></script>
+    <script src="./js/twoway-motion.js"></script>
+  </head>
+
+  <body>
+    <a-scene vr-mode-ui="enabled: false" wasd-control>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera twoway-motion="nonMobileLoad: true; speed: 35"></a-camera>
+      <!-- <a-entity id="main-camera" camera="" twoway-motion="nonMobileLoad: true; speed: 35" position="0 1.6 0">
+        <a-cursor scale="2 2 2" color="white" opacity="0.3"></a-cursor>
+          <a-entity id="flashlight" position="0 -1 0" rotation="15 0 0" light="type:spot;
+          castShadow:true;
+          angle: 30; 
+          intensity: 1.8;
+          color: #fffb74;
+          decay: 1;
+          distance: 10;">
+          </a-entity>
+      </a-entity> -->
+      <a-entity geometry="primitive: sphere; radius: 0.1" material="shader: noise; color: red" position="0 0 -2" scale="2 2 2" rotation="45 45 0" hypermove="factor:0.02"></a-entity>
+    </a-scene>
+  </body>
+
+</html>
