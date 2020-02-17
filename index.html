@@ -4,6 +4,9 @@
 <!-- 你能做到吗？能 →妳能做到嗎？能℡~-->
 <!-- 你听明白了吗？明白 -->
 <!-- 大G女 -->
+<!-- UN2814 -->
+<!-- ZH-CN 盎格鲁•撒克逊计划 -->
+
 
 
 <!DOCTYPE html>
@@ -20,7 +23,6 @@
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
     <script src="js/click-url.js"></script>
     <script src="js/twoway-motion.js"></script>
-    <script src="https://unpkg.com/aframe-entity-generator-component@3.0.2/dist/aframe-entity-generator-component.min.js"></script>
   </head>
 
   <body>
@@ -30,6 +32,8 @@
       <a-assets>
         <a-asset-item id="coronavirus-body" src="asset/coronavirus-body/scene.gltf"></a-asset-item>
         <a-asset-item id="coronavirus-main-protease" src="asset/coronavirus-main-protease/scene.gltf"></a-asset-item>
+        <a-asset-item id="a-painter-test" src="asset/a-painter-test.gltf"></a-asset-item>
+
         <a-mixin id="red" material="color: red"></a-mixin>
         <a-mixin id="candle" geometry="primitive: sphere" light></a-mixin>
       </a-assets>
@@ -52,11 +56,12 @@
       </a-entity> -->
       <a-entity light="type: point; intensity: 2; distance: 50; decay: 2"
       position="0 1 0"></a-entity>
-      <a-entity position="0 2.25 -15" rotation="180 0 0" particle-system="preset: snow; color: yellow"></a-entity>
-      <a-entity geometry="primitive: sphere; radius: 0.1" material="shader: noise; color: red" position="0 0 -2" scale="2 2 2" rotation="45 45 0" hypermove="factor:0.02"></a-entity>
+      <a-entity position="0 0 1 " scale="0.1 0.1 0.1" rotation="180 0 0" particle-system="preset: dust; particleCount: 10000; color: red"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: darkred" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
       <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity>
       <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0"></a-entity>
-      <a-entity entity-generator="mixin: red candle"></a-entity>
+      <a-entity gltf-model="#a-painter-test"></a-entity>
+
 
     </a-scene>
   </body>
