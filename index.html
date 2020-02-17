@@ -6,8 +6,8 @@
 <!-- 大G女 -->
 <!-- UN2814 -->
 <!-- ZH-CN 盎格鲁•撒克逊计划 -->
-
-
+<!-- 火神山 雷神山 -->
+<!-- 方舱医院 -->
 
 <!DOCTYPE html>
 <html>
@@ -20,12 +20,19 @@
     <script src="js/hyper-move.js"></script>
     <script src="js/noise.js"></script>
     <script src="js/aframe-look-at-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+    <!-- <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script> -->
+    <script src="js/aframe-particle-system-component.min.js"></script>
     <script src="js/click-url.js"></script>
     <script src="js/twoway-motion.js"></script>
   </head>
 
   <body>
+
+    <!-- <div>
+      <div>你听明白了吗</div>
+      <a id="exampleViewSource" class="btn" href="https://glitch.com/~aframe" target="_blank">明白</a>
+    </div> -->
+  
     <a-scene vr-mode-ui="enabled: false" wasd-control>
     <!-- <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: blue; density: 0.1"> -->
 
@@ -40,9 +47,10 @@
 
       <a-sky color="black"></a-sky>
 
-      <a-camera twoway-motion="nonMobileLoad: true; speed: 35; threshold: -90">
-        <!-- <a-text value="Hello, World!" position="0 0 -1" visible="true" animation__mousedown="property: visible; from: true; to: false; dur: 10000"></a-text> -->
-      </a-camera>
+      <a-camera twoway-motion="nonMobileLoad: true; speed: 35; threshold: -90"></a-camera>
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+      <a-text value="Hello, World!" position="0 2 -1" animation="property: visible; from: true; to: false; startEvents: mouseenter; dur: 1000"></a-text>
+
       <!-- <a-entity id="main-camera" camera="" twoway-motion="nonMobileLoad: true; speed: 35" position="0 1.6 0">
         <a-cursor scale="2 2 2" color="white" opacity="0.3"></a-cursor>
           <a-entity id="flashlight" position="0 -1 0" rotation="15 0 0" light="type:spot;
@@ -56,10 +64,10 @@
       </a-entity> -->
       <a-entity light="type: point; intensity: 2; distance: 50; decay: 2"
       position="0 1 0"></a-entity>
-      <a-entity position="0 0 1 " scale="0.1 0.1 0.1" rotation="180 0 0" particle-system="preset: dust; particleCount: 10000; color: red"></a-entity>
+      <a-entity particle-system="preset: dust; particleCount: 10000; color: red" position="0 0 1 " scale="0.15 0.15 0.15" rotation="45 180 90"></a-entity>
       <a-entity geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: darkred" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
-      <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity>
-      <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0"></a-entity>
+      <!-- <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity> -->
+      <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0" animation="property: visible; from: true; to: false; startEvents: mousedown; dur: 1000"></a-entity>
       <a-entity gltf-model="#a-painter-test"></a-entity>
 
 
