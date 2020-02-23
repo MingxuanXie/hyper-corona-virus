@@ -9,6 +9,8 @@
 <!-- 火神山 雷神山 -->
 <!-- 方舱医院 -->
 <!-- 云蹦迪 https://aframe.io/a-painter/?url=https://ucarecdn.com/9bd0d49e-1b62-4d30-8c9d-354e5e8ef3de/  -->
+<!-- 云逛展 -->
+
 <!DOCTYPE html>
 <html>
 
@@ -38,23 +40,12 @@
 
       <a-assets>
         <!-- <a-asset-item id="coronavirus-body" src="asset/coronavirus-body/scene.gltf"></a-asset-item> -->
-        <a-asset-item id="coronavirus-main-protease" src="asset/coronavirus-main-protease/scene.gltf"></a-asset-item>
-        <a-asset-item id="a-painter-test" src="asset/a-painter-test.gltf"></a-asset-item>
-
-        <a-asset-item id="857" src="asset/857.gltf"></a-asset-item>
-        <a-asset-item id="857857" src="asset/857857.gltf"></a-asset-item>
-        <a-asset-item id="2019-ncov" src="asset/2019-ncov.gltf"></a-asset-item>
-        <a-asset-item id="cloud-dj" src="asset/cloud-dj.gltf"></a-asset-item>
-        <a-asset-item id="red-cross" src="asset/red-cross.gltf"></a-asset-item>
-
-
-        <a-mixin id="red" material="color: red"></a-mixin>
-        <a-mixin id="candle" geometry="primitive: sphere" light></a-mixin>
+        <!-- <a-asset-item id="coronavirus-main-protease" src="asset/coronavirus-main-protease/scene.gltf"></a-asset-item> -->
       </a-assets>
 
       <a-sky color="magenta"></a-sky>
       <a-camera twoway-motion="nonMobileLoad: true; speed: 10; threshold: -90">
-        <a-text value="Do you understand?" position="-1 0 -1" animation="property: visible; from: true; to: false; startEvents: mousedown; dur: 1000"></a-text>
+        <a-text value="Do you understand?" position="-1 0 -1" animation="property: position; to: -1 0 1; startEvents: mousedown; dur: 100"></a-text>
       </a-camera>
       <a-entity light="type: ambient; color: #ffffff; intensity: 3"></a-entity>
       <!-- <a-entity light="type: point; intensity: 2; distance: 50; decay: 10" position="0 1 0"></a-entity> -->
@@ -64,18 +55,26 @@
       
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
       <a-entity particle-system="preset: dust; particleCount: 10000; color: pink" position="0 0 1 " scale="0.15 0.15 0.15" rotation="45 180 90"></a-entity>
-  
-      <a-entity geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: red" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: magenta" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
 
       <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0"></a-entity>
-      <a-entity gltf-model="#a-painter-test"></a-entity>
-      <a-entity gltf-model="#857"></a-entity>
-      <a-entity gltf-model="#857857"></a-entity>
-      <a-entity gltf-model="#2019-ncov" position="-8.8476 -15.13334 -7.0745" rotation="-18.369599869689324 -4.8025322387865605 2.32448977484575" scale="10 10 10"></a-entity>
-      <a-entity gltf-model="#cloud-dj"></a-entity>
-      <a-entity gltf-model="#red-cross"></a-entity>
+      <a-entity gltf-model="asset/a-painter-test.gltf"></a-entity>
+      <a-entity gltf-model="asset/857.gltf"></a-entity>
+      <a-entity gltf-model="asset/857857.gltf"></a-entity>
+      <!-- <a-entity gltf-model="asset/2019-ncov.gltf" rotation="-18 -4 2"></a-entity> -->
+      <a-entity gltf-model="asset/cloud-dj.gltf"></a-entity>
+      <a-entity gltf-model="asset/red-cross.gltf"></a-entity>
+      <!-- <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity> -->
 
-<!-- <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity> -->
+      <!-- 20200222 a-paintings -->
+      <a-entity id="6" gltf-model="asset/6.gltf"></a-entity>
+      <a-entity id="7" gltf-model="asset/7.gltf"></a-entity>
+      <a-entity id="8" gltf-model="asset/8.gltf"></a-entity>
+      <a-entity id="9" gltf-model="asset/9.gltf"></a-entity>
+      <a-entity id="10" gltf-model="asset/10.gltf"></a-entity>
+      <a-entity id="12" gltf-model="asset/12.gltf"></a-entity>
+      <a-entity id="14" gltf-model="asset/14.gltf"></a-entity>
+
     </a-scene>
   </body>
 
