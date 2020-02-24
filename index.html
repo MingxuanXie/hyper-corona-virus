@@ -1,15 +1,8 @@
-<!-- Build by Mingxuan Xie using Aframe -->
+<!-- Built by Mingxuan Xie using Aframe -->
+<!-- 国外地址 github 国内地址 gitee -->
 
-<!-- ┕857┑ -->
 <!-- 你能做到吗？能 →妳能做到嗎？能℡~-->
 <!-- 你听明白了吗？明白 -->
-<!-- 大G女 -->
-<!-- UN2814 -->
-<!-- ZH-CN 盎格鲁•撒克逊计划 -->
-<!-- 火神山 雷神山 -->
-<!-- 方舱医院 -->
-<!-- 云蹦迪 https://aframe.io/a-painter/?url=https://ucarecdn.com/9bd0d49e-1b62-4d30-8c9d-354e5e8ef3de/  -->
-<!-- 云逛展 -->
 
 <!DOCTYPE html>
 <html>
@@ -18,64 +11,62 @@
     <meta charset="utf-8">
     <title>ツ走召ぺ冠狀寎毐ゞ</title>
     <script src="js/aframe-v1.0.4.min.js"></script>
-    <!-- <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script> -->
     <script src="js/hyper-move.js"></script>
     <script src="js/noise.js"></script>
     <script src="js/aframe-look-at-component.min.js"></script>
-    <!-- <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script> -->
     <script src="js/aframe-particle-system-component.min.js"></script>
     <script src="js/click-url.js"></script>
     <script src="js/twoway-motion.js"></script>
   </head>
 
   <body>
-
-    <!-- <div>
-      <div>你听明白了吗</div>
-      <a id="exampleViewSource" class="btn" href="https://glitch.com/~aframe" target="_blank">明白</a>
-    </div> -->
-  
-    <a-scene vr-mode-ui="enabled: false" wasd-control>
-    <!-- <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: blue; density: 0.1"> -->
+    <!-- DELETE debug IN PRODUCTION  -->
+    <a-scene debug vr-mode-ui="enabled: false" wasd-control> 
+    <!-- <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: blue; density: 0.5"> BUG WITH PARTICLE SYSTEM! -->
 
       <a-assets>
-        <!-- <a-asset-item id="coronavirus-body" src="asset/coronavirus-body/scene.gltf"></a-asset-item> -->
-        <!-- <a-asset-item id="coronavirus-main-protease" src="asset/coronavirus-main-protease/scene.gltf"></a-asset-item> -->
       </a-assets>
 
+<!-- Utilities -->
       <a-sky color="magenta"></a-sky>
+      <a-entity id="outerBoundary" geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: #ff66cc" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
       <a-camera twoway-motion="nonMobileLoad: true; speed: 10; threshold: -90">
         <a-text value="Do you understand?" position="-1 0 -1" animation="property: position; to: -1 0 1; startEvents: mousedown; dur: 100"></a-text>
       </a-camera>
-      <a-entity light="type: ambient; color: #ffffff; intensity: 3"></a-entity>
-      <!-- <a-entity light="type: point; intensity: 2; distance: 50; decay: 10" position="0 1 0"></a-entity> -->
-      <!-- <a-light type="point" light="color:#fff;intensity:7" position="3 10 1"></a-light>
-      <a-light type="point" light="color:#fff;intensity:0.2" position="-3 -10 0"></a-light>
-      <a-light type="hemisphere" groundcolor="#888" intensity="0.8" light=""></a-light> -->
-      
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
-      <a-entity particle-system="preset: dust; particleCount: 10000; color: pink" position="0 0 1 " scale="0.15 0.15 0.15" rotation="45 180 90"></a-entity>
-      <a-entity geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: magenta" position="0 0 -2" scale="1 1 1" rotation="0 0 0"></a-entity>
+      <a-entity id="particle" particle-system="preset: dust; particleCount: 2000; color: magenta" scale="0.15 0.15 0.15" rotation="45 180 90"></a-entity>
 
+
+<!-- Lights -->
+      <a-entity light="type: ambient; color: #ffffff; intensity: 2"></a-entity>
+      <!-- <a-light type="point" light="color:#fff;intensity:7" position="3 10 1"></a-light> -->
+      <!-- <a-light type="point" light="color:#fff;intensity:0.2" position="-3 -10 0"></a-light> -->
+
+<!-- Models -->
       <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0"></a-entity>
-      <a-entity gltf-model="asset/a-painter-test.gltf"></a-entity>
-      <a-entity gltf-model="asset/857.gltf"></a-entity>
-      <a-entity gltf-model="asset/857857.gltf"></a-entity>
-      <!-- <a-entity gltf-model="asset/2019-ncov.gltf" rotation="-18 -4 2"></a-entity> -->
-      <a-entity gltf-model="asset/cloud-dj.gltf"></a-entity>
-      <a-entity gltf-model="asset/red-cross.gltf"></a-entity>
       <!-- <a-entity gltf-model="#coronavirus-body" scale="3 3 3" position="0 1.5 0"></a-entity> -->
+      <!-- <a-entity gltf-model="asset/2019-ncov.gltf" rotation="-18 -4 2"></a-entity> -->
 
-      <!-- 20200222 a-paintings -->
-      <a-entity id="6" gltf-model="asset/6.gltf"></a-entity>
-      <a-entity id="7" gltf-model="asset/7.gltf"></a-entity>
-      <a-entity id="8" gltf-model="asset/8.gltf"></a-entity>
-      <a-entity id="9" gltf-model="asset/9.gltf"></a-entity>
-      <a-entity id="10" gltf-model="asset/10.gltf"></a-entity>
-      <a-entity id="12" gltf-model="asset/12.gltf"></a-entity>
-      <a-entity id="14" gltf-model="asset/14.gltf"></a-entity>
+<!-- A-paintings -->
+      <a-entity id="aPainterTest" gltf-model="asset/a-painter-test.gltf" position="7.31455 -4.11786 -4.5658" rotation="-180 64.83705001259422 143.13975412635304" scale="4.23555 4.23574 4.23574"></a-entity>
+      <a-entity id="857" gltf-model="asset/857.gltf"></a-entity>
+      <a-entity id="857857" gltf-model="asset/857857.gltf" position="-2.789 -0.44379 4.75242" rotation="173.414 14.72730716604268 177.28345505378908" scale="1.235 1.235 1.23452"></a-entity>
+      <a-entity id="cloudDJ" gltf-model="asset/cloud-dj.gltf" position="-3.62033 -0.14568 2.90116" scale="0.94 0.93979 0.93979"></a-entity>
+      <a-entity id="redCross" gltf-model="asset/red-cross.gltf" position="-4.587 0 0.55834" scale="1.262 1.26151 1.26151"></a-entity>
+      <a-entity id="1" gltf-model="asset/1.gltf" position="1.00114 -0.13283 3.66982" rotation="0 -142.48314449313312 0" scale="0.591 0.59056 0.59056"></a-entity>
+      <a-entity id="2" gltf-model="asset/2.gltf" position="-4.27518 0.28332 -1.13422" rotation="18.726 52.570023618843294 -34.77338154428479" scale="0.808 0.80771 0.80771"></a-entity>
+      <a-entity id="3" gltf-model="asset/3.gltf" position="-0.06557 -0.00543 -0.94443" rotation="-2.2414108945517808 7.463921197169234 0"></a-entity>
+      <a-entity id="4" gltf-model="asset/4.gltf" position="2.92 -1.42831 2.119" rotation="0 -130.299 0" scale="1.58499 1.595 1.58499"></a-entity>
+      <a-entity id="5" gltf-model="asset/5.gltf" position="-3.39435 0.28458 0.92185" scale="0.782 0.78238 0.78238" rotation="0 89.92973665034862 0.056722821717951497"></a-entity>
+      <a-entity id="6" gltf-model="asset/6.gltf" position="0.15717 -1.93806 3.94879" rotation="-46.352 0 0" scale="2.533 2 1"></a-entity>
+      <a-entity id="7" gltf-model="asset/7.gltf" position="2.285 -6.28265 -0.23051" scale="5.425 5.42545 5.42545"></a-entity>
+      <a-entity id="8" gltf-model="asset/8.gltf" position="-9.61687 -3.65626 -2.33803" scale="4.88662 4.88681 4.88681" rotation="0 0 -54.19"></a-entity>
+      <a-entity id="9" gltf-model="asset/9.gltf" position="-2.85346 -4.47 0.9636" scale="5.175 5.175 5.16502" rotation="0 0 -18.823"></a-entity>
+      <a-entity id="10" gltf-model="asset/10.gltf" position="9.90817 -1.08284 0.891" rotation="0 0 46.995" scale="3.2167 3.2167 3.217"></a-entity>
+      <a-entity id="12" gltf-model="asset/12.gltf" position="1.05911 1.2536 4.75967" rotation="33.047632665350754 -146.1374693104775 7.483974719998814" scale="0.955 0.95516 0.95516"></a-entity>
 
     </a-scene>
+
   </body>
 
 </html>
