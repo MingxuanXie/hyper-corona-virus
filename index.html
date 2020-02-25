@@ -27,7 +27,22 @@
     <!-- <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: blue; density: 0.5"> BUG WITH PARTICLE SYSTEM! -->
 
       <a-assets>
-        <!-- <a-asset-item id="medical-dancing" src="asset/medical-dancing/scene.gltf"></a-asset-item> -->
+        <a-asset-item id="MedicalDancing" src="asset/medical-dancing/scene.gltf"></a-asset-item>
+        <a-asset-item id="VirusBody" src="asset/a-painter-test.gltf"></a-asset-item>
+        <a-asset-item id="857" src="asset/857.gltf"></a-asset-item>
+        <a-asset-item id="857857" src="asset/857857.gltf"></a-asset-item>
+        <a-asset-item id="CloudDJ" src="asset/cloud-dj.gltf"></a-asset-item>
+        <a-asset-item id="RedCross" src="asset/red-cross.gltf"></a-asset-item>
+        <a-asset-item id="Un2814" src="asset/1.gltf"></a-asset-item>
+        <a-asset-item id="AngloSaxonMission" src="asset/2.gltf"></a-asset-item>
+        <a-asset-item id="CloudExhibition" src="asset/3.gltf"></a-asset-item>
+        <a-asset-item id="LeiShenShan" src="asset/5.gltf"></a-asset-item>
+        <a-asset-item id="covid19Ace2" src="asset/6.gltf"></a-asset-item>
+        <a-asset-item id="covid19Rna" src="asset/7.gltf"></a-asset-item>
+        <a-asset-item id="covid19Protein" src="asset/8.gltf"></a-asset-item>
+        <a-asset-item id="covid19Unfolded" src="asset/9.gltf"></a-asset-item>
+        <a-asset-item id="covid19Unfolding" src="asset/10.gltf"></a-asset-item>
+        <a-asset-item id="liwenliang" src="asset/12.gltf"></a-asset-item>
       </a-assets>
 
 <!-- Utilities -->
@@ -37,13 +52,11 @@
         <a-text value="Do you understand?" position="-1 0 -1" animation="property: position; to: -1 0 1; startEvents: mousedown; dur: 100"></a-text>
       </a-camera>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
-      <a-entity id="particle" particle-system="preset: dust; particleCount: 1000; color: magenta" scale="0.15 0.15 0.15" rotation="45 180 90"></a-entity>
+      <a-entity id="particle" particle-system="preset: dust; particleCount: 1000; color: magenta" scale="0.13 0.13 0.13" rotation="45 180 90"></a-entity>
 
 
 <!-- Lights -->
       <a-entity light="type: ambient; color: #ffffff; intensity: 2"></a-entity>
-      <!-- <a-light type="point" light="color:#fff;intensity:7" position="3 10 1"></a-light> -->
-      <!-- <a-light type="point" light="color:#fff;intensity:0.2" position="-3 -10 0"></a-light> -->
 
 <!-- Models -->
       <a-entity gltf-model="#coronavirus-main-protease" scale="0.1 0.1 0.1" position="0 1 0"></a-entity>
@@ -51,26 +64,26 @@
       <!-- <a-entity gltf-model="asset/2019-ncov.gltf" rotation="-18 -4 2"></a-entity> -->
 
 <!-- A-paintings -->
-      <!-- <a-entity gltf-model="#medical-dancing" animation-mixer></a-entity> -->
-      <a-entity id="medical-dancing1" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.6553 3.6553" position="3.32977 0.07776 -5.09888"></a-entity>
-      <a-entity id="medical-dancing2" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.6553 3.6553" position="-4.4655 4.47159 -4.1889" rotation="142.567 0.01 0"></a-entity>
-      <a-entity id="medical-dancing3" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.655 3.6553" position="3.46021 7.2269 -1.04317" rotation="160.769 21.585000000000004 -11.939000000000002"></a-entity>
-      <a-entity id="medical-dancing4" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.655 3.6553" position="-2.13539 -0.13826 3.63683" rotation="-41.94108356137139 136.2963462213105 -79.59243211059831"></a-entity>
+      <a-entity id="temp1" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.6553 3.6553" position="3.32977 0.07776 -5.09888"></a-entity>
+      <a-entity id="temp2" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.6553 3.6553" position="-4.4655 4.47159 -4.1889" rotation="142.567 0.01 0"></a-entity>
+      <a-entity id="temp3" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.655 3.6553" position="3.46021 7.2269 -1.04317" rotation="160.769 21.585000000000004 -11.939000000000002"></a-entity>
+      <a-entity id="temp4" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.655 3.6553" position="-2.13539 -0.13826 3.63683" rotation="-41.94108356137139 136.2963462213105 -79.59243211059831"></a-entity>
       
-      <a-entity id="virusBody" gltf-model="asset/a-painter-test.gltf" animation="property: rotation; to: 14.985711131646681 -114.5239500063392 -17.8579485586375; loop: true; dur: 5000; dir: alternate; easing: linear" position="9.65626 -2.666 -3.8625" rotation="1.270247431805035 -118.58507485822649 -45.078027489712646" scale="5.60458 5.60483 5.60483"></a-entity>      <a-entity id="857" hypermove gltf-model="asset/857.gltf" position="-5.21367 0 3.94617" rotation="0 155.16441937276363 0"></a-entity>
-      <a-entity id="857857" hypermove gltf-model="asset/857857.gltf" position="-2.20163 -0.22386 6.28104" rotation="8.754795109598978 -165.37681911317543 -2.7307168515935034" scale="2.21008 2.21008 2.20923"></a-entity>
-      <a-entity id="cloudDJ" gltf-model="asset/cloud-dj.gltf" position="-3.5162 -0.77903 2.59669" scale="1.61101 1.61065 1.61065"></a-entity>
-      <a-entity id="redCross" gltf-model="asset/red-cross.gltf" position="-4.587 0 0.55834" scale="1.262 1.26151 1.26151"></a-entity>
-      <a-entity id="un2814" hypermove gltf-model="asset/1.gltf" position="2.82025 -0.03396 2.14652" rotation="-20.578352169918645 -127.53524857596507 -36.44068872811549" scale="0.69365 0.69313 0.69313"></a-entity>
-      <a-entity id="anglosaxonmission" hypermove gltf-model="asset/2.gltf" position="-4.80472 0.56883 -3.18471" rotation="20.65913921903209 53.489047922233134 -32.046102439462075"></a-entity>      
-      <a-entity id="cloudExhibition" gltf-model="asset/3.gltf" position="-0.06557 0.82271 -1.72369" rotation="39.99188114233633 9.754606462102267 6.598181968726561"></a-entity>      
-      <a-entity id="leishenshan" gltf-model="asset/5.gltf" position="-3.66663 0.44848 1.62362" scale="2.22167 2.22275 2.22275" rotation="19.79397294838455 107.55735617534353 0.029793805346802805"></a-entity>
-      <a-entity id="6" gltf-model="asset/6.gltf" position="0.15717 -1.93806 3.94879" rotation="-46.352 0 0" scale="2.533 2 1"></a-entity>
-      <a-entity id="7" hypermove gltf-model="asset/7.gltf" position="1.88073 -6.60872 -0.28235" scale="6.22101 6.22153 6.22153"></a-entity>
-      <a-entity id="covid19protein" gltf-model="asset/8.gltf" animation="property: scale; to: 4 4 4; loop: true; dir: alternate; dur: 4500" position="-4.15705 -3.8085 -1.36444" scale="3 3 3" rotation="0 0 -25.349944687768144"></a-entity>
-      <a-entity id="9" hypermove gltf-model="asset/9.gltf" position="-1.3142 -1.08238 -0.4258" scale="2.53895 2.53895 2.53405" rotation="" visible=""></a-entity>
-      <a-entity id="10" gltf-model="asset/10.gltf" animation="property: position; to: 4 -1.08284 3.65579; loop: true; round: true; dur: 1500" position="6 -1.08284 3.65579" rotation="10.534402021275316 -46.421613519294425 43.4691620009853" scale="3.2167 3.2167 3.217"></a-entity>
-      <a-entity id="liwenliang" gltf-model="asset/12.gltf" animation="property: position; to: 1.70086 2.5 4.91678; loop: true; dur: 3000; dir: alternate" position="1.70086 1.2536 4.91678" rotation="33.047632665350754 -146.1374693104775 -0.4681065186218826" scale="1.42155 1.42179 1.42179"></a-entity>
+      <a-entity id="virusBody" gltf-model="#VirusBody" animation="property: rotation; to: 14.985711131646681 -114.5239500063392 -17.8579485586375; loop: true; dur: 5000; dir: alternate; easing: linear" position="9.65626 -2.666 -3.8625" rotation="1.270247431805035 -118.58507485822649 -45.078027489712646" scale="5.60458 5.60483 5.60483"></a-entity>      
+      <a-entity id="857_1" gltf-model="#857" hypermove position="-5.21367 0 3.94617" rotation="0 155.16441937276363 0"></a-entity>
+      <a-entity id="857857_1" gltf-model="#857857" hypermove position="-2.20163 -0.22386 6.28104" rotation="8.754795109598978 -165.37681911317543 -2.7307168515935034" scale="2.21008 2.21008 2.20923"></a-entity>
+      <a-entity id="cloudDJ" gltf-model="#CloudDJ" position="-3.5162 -0.77903 2.59669" scale="1.61101 1.61065 1.61065"></a-entity>
+      <a-entity id="redCross" gltf-model="#RedCross" position="-4.587 0 0.55834" scale="1.262 1.26151 1.26151"></a-entity>
+      <a-entity id="un2814" gltf-model="#Un2814" hypermove position="2.82025 -0.03396 2.14652" rotation="-20.578352169918645 -127.53524857596507 -36.44068872811549" scale="0.69365 0.69313 0.69313"></a-entity>
+      <a-entity id="angloSaxonMission" gltf-model="#AngloSaxonMission" hypermove position="-4.80472 0.56883 -3.18471" rotation="20.65913921903209 53.489047922233134 -32.046102439462075"></a-entity>      
+      <a-entity id="cloudExhibition" gltf-model="#CloudExhibition" position="-0.06557 0.82271 -1.72369" rotation="39.99188114233633 9.754606462102267 6.598181968726561"></a-entity>      
+      <a-entity id="leiShenShan" gltf-model="#LeiShenShan" position="-3.66663 0.44848 1.62362" scale="2.22167 2.22275 2.22275" rotation="19.79397294838455 107.55735617534353 0.029793805346802805"></a-entity>
+      <a-entity id="covid19Ace2" gltf-model="#covid19Ace2" position="0.15717 -1.93806 3.94879" rotation="-46.352 0 0" scale="2.533 2 1"></a-entity>
+      <a-entity id="covid19Rna" gltf-model="#covid19Rna" hypermove position="1.88073 -6.60872 -0.28235" scale="6.22101 6.22153 6.22153"></a-entity>
+      <a-entity id="covid19Protein" gltf-model="#covid19Protein" animation="property: scale; to: 4 4 4; loop: true; dir: alternate; dur: 4500" position="-4.15705 -3.8085 -1.36444" scale="3 3 3" rotation="0 0 -25.349944687768144"></a-entity>
+      <a-entity id="covid19Unfolded" gltf-model="#covid19Unfolded" hypermove position="-1.3142 -1.08238 -0.4258" scale="2.53895 2.53895 2.53405" rotation="" visible=""></a-entity>
+      <a-entity id="covid19Unfolding" gltf-model="#covid19Unfolding" animation="property: position; to: 4 -1.08284 3.65579; loop: true; round: true; dur: 1500" position="6 -1.08284 3.65579" rotation="10.534402021275316 -46.421613519294425 43.4691620009853" scale="3.2167 3.2167 3.217"></a-entity>
+      <a-entity id="liwenliang" gltf-model="#liwenliang" animation="property: position; to: 1.70086 2.5 4.91678; loop: true; dur: 3000; dir: alternate" position="1.70086 1.2536 4.91678" rotation="33.047632665350754 -146.1374693104775 -0.4681065186218826" scale="1.42155 1.42179 1.42179"></a-entity>
     </a-scene>
 
   </body>
