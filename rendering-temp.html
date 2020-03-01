@@ -1,4 +1,4 @@
-<!-- Built by Mingxuan Xie (https://mingxuan.fun/) using Aframe.io -->
+<!-- Built by Mingxuan Xie using Aframe -->
 <!-- 国外地址 github 国内地址 gitee -->
 
 <!-- 你能做到吗？能 →妳能做到嗎？能℡~-->
@@ -26,12 +26,11 @@
 
   <body>
     <!-- DELETE debug IN PRODUCTION  -->
-    <!-- <a-scene debug vr-mode-ui="enabled: false" wasd-control>  -->
-    <!-- BUG WITH PARTICLE SYSTEM! -->
-    <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: #f00070; density: 0.1"> 
+    <a-scene debug vr-mode-ui="enabled: false" wasd-control> 
+    <!-- <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: blue; density: 0.5"> BUG WITH PARTICLE SYSTEM! -->
 
       <a-assets>
-        <img id="Menu" src="asset/menu.png">
+        <img id="MingBai" src="asset/ming-bai.png">
         <a-asset-item id="MedicalDancing" src="asset/medical-dancing/scene.gltf"></a-asset-item>
         <a-asset-item id="Covid19MainProtease" src="asset/covid-19-main-protease/scene.gltf"></a-asset-item>
         <a-asset-item id="CellCore" src="asset/a-painter-test.gltf"></a-asset-item>
@@ -53,9 +52,9 @@
       </a-assets>
 
 <!-- Utilities -->
-      <a-sky color="pink"></a-sky>
-      <a-camera twoway-motion="nonMobileLoad: true; speed: 15; threshold: -90" far="1000">
-        <a-image src="#Menu" width="0.4" height="0.4" position="0 0 -0.5" animation="property: position; to: 0 0 1; startEvents: mousedown; dur: 100"></a-image>
+      <a-sky color="#ff0080"></a-sky>
+      <a-camera twoway-motion="nonMobileLoad: true; speed: 15; threshold: -90">
+        <a-image src="#MingBai" width="0.25" height="0.125" position="0 0 -0.5" animation="property: position; to: 0 0 1; startEvents: mousedown; dur: 100"></a-image>
       </a-camera>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
@@ -78,7 +77,7 @@
       <a-entity id="medicalDancing3" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.655 3.6553" position="3.46021 7.2269 -1.04317" rotation="160.769 21.585000000000004 -11.939000000000002"></a-entity>
       <a-entity id="medicalDancing4" gltf-model="asset/medical-dancing/scene.gltf" animation-mixer="" scale="3.6553 3.655 3.6553" position="-2.68399 -0.13826 3.76339" rotation="-15.490486949156937 151.42071313937885 -120.38416233493727"></a-entity>
 
-      <a-entity id="covid19MainProtease" gltf-model="#Covid19MainProtease" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity id="covid19MainProtease" gltf-model="#Covid19MainProtease"></a-entity>
       <a-entity id="cellCore" gltf-model="asset/a-painter-test.gltf" animation="property: rotation; to: 14.985711131646681 -114.5239500063392 -17.8579485586375; loop: true; dur: 5000; dir: alternate; easing: linear" position="13.76887 -2.20181 1.62988" rotation="14.759529419783247 -114.59092201626852 -18.30683488026872" scale="7.85476 7.85511 7.85511"></a-entity>      
       <a-entity id="857_1" gltf-model="asset/857.gltf" hypermove="" position="-4.592448912125566 0.557683643395202 2.7049343870692897" rotation="0 155.16441937276363 0"></a-entity>
       <a-entity id="857857_1" gltf-model="asset/857857.gltf" hypermove="" position="-2.5924085050814623 -0.17137763636582018 6.1469851576339956" rotation="8.754795109598978 -165.37681911317543 -2.7307168515935034" scale="2.21008 2.21008 2.20923"></a-entity>

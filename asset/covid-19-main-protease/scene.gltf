@@ -1,0 +1,717 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 750,
+      "max": [
+        13.297794342041016,
+        27.492408752441406,
+        5.0803008079528809
+      ],
+      "min": [
+        -13.301661491394043,
+        -27.534111022949219,
+        -9.6611766815185547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9000,
+      "componentType": 5126,
+      "count": 750,
+      "max": [
+        0.99655783176422119,
+        0.9872363805770874,
+        0.996623694896698
+      ],
+      "min": [
+        -0.98873645067214966,
+        -0.98733234405517578,
+        -0.99918884038925171
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 1236,
+      "max": [
+        749
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 18000,
+      "componentType": 5126,
+      "count": 2674,
+      "max": [
+        16.498785018920898,
+        27.094900131225586,
+        8.5654802322387695
+      ],
+      "min": [
+        -16.496318817138672,
+        -27.093877792358398,
+        -11.455008506774902
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 50088,
+      "componentType": 5126,
+      "count": 2674,
+      "max": [
+        0.99985885620117188,
+        0.99129873514175415,
+        0.99891608953475952
+      ],
+      "min": [
+        -0.99658644199371338,
+        -0.99500101804733276,
+        -0.9986380934715271
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4944,
+      "componentType": 5125,
+      "count": 4368,
+      "max": [
+        2673
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 82176,
+      "componentType": 5126,
+      "count": 939,
+      "max": [
+        11.347140312194824,
+        27.37115478515625,
+        2.5025649070739746
+      ],
+      "min": [
+        -11.342905044555664,
+        -27.360071182250977,
+        -8.6291828155517578
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 93444,
+      "componentType": 5126,
+      "count": 939,
+      "max": [
+        0.99163722991943359,
+        0.98521071672439575,
+        0.99914610385894775
+      ],
+      "min": [
+        -0.9935106635093689,
+        -0.99261772632598877,
+        -0.97708785533905029
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 22416,
+      "componentType": 5125,
+      "count": 1548,
+      "max": [
+        938
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 104712,
+      "componentType": 5126,
+      "count": 3114,
+      "max": [
+        17.125,
+        30.634998321533203,
+        29.1090087890625
+      ],
+      "min": [
+        -17.125997543334961,
+        -30.634998321533203,
+        -6.1152000427246094
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 142080,
+      "componentType": 5126,
+      "count": 3114,
+      "max": [
+        0.99988627433776855,
+        0.99865829944610596,
+        0.9998052716255188
+      ],
+      "min": [
+        -0.99982339143753052,
+        -0.99846369028091431,
+        -0.99971312284469604
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 28608,
+      "componentType": 5125,
+      "count": 16953,
+      "max": [
+        3113
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 179448,
+      "componentType": 5126,
+      "count": 4909,
+      "max": [
+        27.242000579833984,
+        38.252998352050781,
+        19.158000946044922
+      ],
+      "min": [
+        -27.242998123168945,
+        -38.253002166748047,
+        -30.440998077392578
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 238356,
+      "componentType": 5126,
+      "count": 4909,
+      "max": [
+        0.999869704246521,
+        0.99964034557342529,
+        0.99951481819152832
+      ],
+      "min": [
+        -0.99982160329818726,
+        -0.9996454119682312,
+        -0.99978989362716675
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 96420,
+      "componentType": 5125,
+      "count": 28446,
+      "max": [
+        4908
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 297264,
+      "componentType": 5126,
+      "count": 527,
+      "max": [
+        15.234334945678711,
+        32.224998474121094,
+        25.993000030517578
+      ],
+      "min": [
+        -15.235331535339355,
+        -32.225002288818359,
+        7.203000545501709
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 303588,
+      "componentType": 5126,
+      "count": 527,
+      "max": [
+        0.99963682889938354,
+        0.99575769901275635,
+        0.99311691522598267
+      ],
+      "min": [
+        -0.99963665008544922,
+        -0.995441734790802,
+        -0.98268407583236694
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 210204,
+      "componentType": 5125,
+      "count": 3027,
+      "max": [
+        526
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 309912,
+      "componentType": 5126,
+      "count": 5237,
+      "max": [
+        26.937999725341797,
+        36.416999816894531,
+        29.826999664306641
+      ],
+      "min": [
+        -26.868997573852539,
+        -36.407005310058594,
+        -28.217998504638672
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 372756,
+      "componentType": 5126,
+      "count": 5237,
+      "max": [
+        0.99959379434585571,
+        0.99997037649154663,
+        0.99962162971496582
+      ],
+      "min": [
+        -0.9992254376411438,
+        -0.99958711862564087,
+        -0.99994528293609619
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 222312,
+      "componentType": 5125,
+      "count": 30462,
+      "max": [
+        5236
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Mingxuan Xie (https://sketchfab.com/vrchitecture)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/the-crystal-structure-of-covid-19-main-protease-c050737fea41479aa1afb893d375cea9",
+      "title": "The Crystal Structure Of COVID-19 Main Protease"
+    },
+    "generator": "Sketchfab-7.82.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 344160,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 435600,
+      "byteOffset": 344160,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 779760,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.054901999999999999,
+          0.054901999999999999,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.219608,
+          0.219608,
+          0.219608,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.18823500000000001,
+          0.313726,
+          0.972549,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_5",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.78431399999999996,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_4",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0,
+          0.50196099999999999,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_6",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.62745099999999998,
+          0,
+          0.50196099999999999,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "material_3",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89825211296811958
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_0_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 6
+          },
+          "indices": 8,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_5_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 10,
+            "POSITION": 9
+          },
+          "indices": 11,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_4_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12
+          },
+          "indices": 14,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_6_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15
+          },
+          "indices": 17,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "The crystal structure of COVID-19 main protease_c_material_3_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 19,
+            "POSITION": 18
+          },
+          "indices": 20,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "8978e34686894289a1c422862a271a46.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "The crystal structure of COVID-19 main protease_c"
+    },
+    {
+      "mesh": 0,
+      "name": "The crystal structure of COVID-19 main protease_c_material_1_0"
+    },
+    {
+      "mesh": 1,
+      "name": "The crystal structure of COVID-19 main protease_c_material_0_0"
+    },
+    {
+      "mesh": 2,
+      "name": "The crystal structure of COVID-19 main protease_c_material_2_0"
+    },
+    {
+      "mesh": 3,
+      "name": "The crystal structure of COVID-19 main protease_c_material_5_0"
+    },
+    {
+      "mesh": 4,
+      "name": "The crystal structure of COVID-19 main protease_c_material_4_0"
+    },
+    {
+      "mesh": 5,
+      "name": "The crystal structure of COVID-19 main protease_c_material_6_0"
+    },
+    {
+      "mesh": 6,
+      "name": "The crystal structure of COVID-19 main protease_c_material_3_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
