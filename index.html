@@ -48,7 +48,7 @@
 
 <!-- Utilities -->
       <a-sky color="pink"></a-sky>
-      <a-camera twoway-motion="nonMobileLoad: true; speed: 15; threshold: -90" animation__start="property: position; from: 0 1.6 30; to: 0 1.6 1; dur: 3000;" far="1000" position="0 1.6 0">
+      <a-camera twoway-motion="nonMobileLoad: true; speed: 15; threshold: -90" animation__start="property: position; from: 0 1.6 30; to: 0 1.6 1; dur: 3000;" position="0 1.6 0" far="1000" fov="90">
         <a-image src="#Menu" width="0.35" height="0.35" position="0 0.025 -0.5" animation="property: position; to: 0 0 1; startEvents: mousedown; dur: 100"></a-image>
       </a-camera>
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
@@ -64,7 +64,7 @@
       <a-link href="https://mingxuan.fun/" title="Mingxuan Xie" image="#Mingxuan" position="0 1.5 50"></a-link>
 
 <!-- Images -->
-      <a-image id="redCross" src="#RedCross" width="1" height="1" hypermove position="2 2 2"></a-image>
+      <a-image id="redCross" src="#RedCross" width="0.5" height="0.5" hypermove position="2 2 2"></a-image>
       <a-image id="un2814" src="#Un2814" width="2" height="1" hypermove position="3.52435 3.48037 7.24453" rotation="25.449066386325775 -130.33586627856454 11.270079830223294"></a-image>
       <a-image id="angloSaxonMission" src="#AngloSaxonMission" width="2" height="1" hypermove position="-4.225557835819129 0.49249678056709395 -2.811250345459088" rotation="0 40.985 0"></a-image>      
       <a-image id="cloudExhibition" src="#CloudExhibition" width="1" height="0.5"  position="0 1.8 -0.6" rotation="39.99188114233633 9.754606462102267 6.598181968726561"></a-image>   
@@ -86,7 +86,7 @@
       <a-entity id="covid19Protein" gltf-model="#Covid19Protein" animation="property: scale; to: 4 4 4; loop: true; dir: alternate; dur: 4500" position="1.08429 -4 6.45884" scale="4.8383 4.8383 4.8383" rotation="0 0 -36.56673944304427"></a-entity>
       <a-entity id="covid19Unfolded" gltf-model="#Covid19Unfolded" position="-3.76191 -6.57407 -5.75644" scale="6 6 6" rotation=""></a-entity>
       <a-entity id="covid19Unfolding" gltf-model="#Covid19Unfolding" animation="property: position; to: 6 -3 -7; loop: true; round: true; dur: 3000" position="6.86533 -3.64713 -8.00487" rotation="10.534402021275316 -37.411279233067106 43.4691620009853" scale="6.23223 6.23223 6.23281"></a-entity>
-      <a-entity id="liwenliang" gltf-model="#LiWenLiang" animation="property: position; to: -1.96229 -0.69633 5.35524; loop: true; dir: alternate; dur: 6000" position="-1.81623 0.3 5.22085" rotation="32.73365179361906 154.72897144846425 -4.845504073421372" scale="2.80541 2.80588 2.80588"></a-entity>
+      <a-entity id="liwenliang" gltf-model="#LiWenLiang" animation="property: position; to: -1.96229 -0.69633 5.35524; loop: true; dir: alternate; dur: 9000" position="-1.81623 0.3 5.22085" rotation="32.73365179361906 154.72897144846425 -4.845504073421372" scale="2.80541 2.80588 2.80588"></a-entity>
 
     </a-scene>
 
