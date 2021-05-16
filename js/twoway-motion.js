@@ -66,27 +66,27 @@ AFRAME.registerComponent('twoway-motion', {
         var canvas = document.querySelector(".a-canvas");
 
         canvas.addEventListener("mousedown", function (e) {
-            report("mousedown", e);
+            // report("mousedown", e);
             twowaymotion.touching = true;
             this.touchTime = new Date().getTime();
         });
         canvas.addEventListener("mouseup", function (e) {
-            report("mouseup", e);
+            // report("mouseup", e);
             twowaymotion.touching = false;
         });
 
         canvas.addEventListener("touchstart", function (e) {
             this.touch = e;
-            report("touches.length: ", e.touches.length);
+            // report("touches.length: ", e.touches.length);
             if (e.touches.length > 1) {
-                report("multitouch: doing nothing");
+                // report("multitouch: doing nothing");
             } else {
-                report("touchstart", e);
+                // report("touchstart", e);
                 twowaymotion.touching = true;
             }
         });
         canvas.addEventListener("touchend", function () {
-            console.log(this.componentName, " touchend");
+            // console.log(this.componentName, " touchend");
             twowaymotion.touching = false;
         });
     },

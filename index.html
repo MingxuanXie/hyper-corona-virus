@@ -5,24 +5,33 @@
 
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <title>ツ走召ぺ冠狀寎毐ゞ</title>
-    <script src="js/aframe-v1.0.4.min.js"></script>
+    <script src="js/aframe-v1.2.0.ming.js"></script>
     <script src="js/hyper-move.js"></script>
     <script src="js/twoway-motion.js"></script>
     <script src="js/aframe-extras.min.js"></script>
-    <!-- <script src="js/aframe-look-at-component.min.js"></script> -->
+    <script src="js/aframe-look-at-component.js"></script>
     <!-- <script src="js/noise.js"></script> POOL PERFORMANCE ON PHONES -->
     <!-- <script src="js/aframe-particle-system-component.min.js"></script> POOL PERFORMANCE ON PHONES -->
     <!-- <script src="js/click-url.js"></script> -->
   </head>
 
   <body>
-
-    <a-scene vr-mode-ui="enabled: false" wasd-control fog="type: exponential; color: #ff0088; density: 0.15"> 
-
+    <div style="
+      z-index: 1000;
+      position: relative;
+      font-family: PingFangSC-Regular, sans-serif;
+      background-color: greenyellow;
+      margin: 0">
+      <a style="color: deeppink; padding: 10;" href="https://mingxuan.fun/work/2020/03/03/hyper-corona-virus.html" target="_blank"><b>ツ走召ぺ冠狀寎毐ゞ 介紹 -> MINGXUAN.FUN</b></a>
+    </div>
+    <a-scene 
+      vr-mode-ui="enabled: false" 
+      wasd-control 
+      fog="type: exponential; color: #ff0088; density: 0.15"
+      loading-screen="dotsColor: yellow; backgroundColor: deeppink"> 
       <a-assets>
         <img id="Menu" src="asset/menu.png">
         <img id="Mingxuan" src="asset/mingxuan.fun.jpg">
@@ -32,7 +41,7 @@
         <img id="HuoShenShan" src="asset/HuoShenShan.png">
         <img id="LeiShenShan" src="asset/LeiShenShan.png">
         <img id="CloudExhibition" src="asset/CloudExhibition.png">
-        <a-asset-item id="MedicalDancing" src="asset/medical-dancing/scene.gltf"></a-asset-item>
+        <a-asset-item id="MedicalDancing" src="asset/medical-dancing/scene.gltf" preload></a-asset-item>
         <a-asset-item id="Covid19MainProtease" src="asset/covid-19-main-protease/scene.gltf"></a-asset-item>
         <a-asset-item id="CellCore" src="asset/a-painter-test.gltf"></a-asset-item>
         <a-asset-item id="857" src="asset/857.gltf"></a-asset-item>
@@ -48,10 +57,10 @@
 
 <!-- Utilities -->
       <a-sky color="pink"></a-sky>
-      <a-camera twoway-motion="nonMobileLoad: true; speed: 15; threshold: -90" animation__start="property: position; from: 0 1.6 30; to: 0 1.6 1; dur: 3000;" position="0 1.6 0" far="1000" fov="90">
-        <a-image src="#Menu" width="0.35" height="0.35" position="0 0.025 -0.5" animation="property: position; to: 0 0 1; startEvents: mousedown; dur: 100"></a-image>
-      </a-camera>
-      <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+      <a-entity camera look-controls twoway-motion="nonMobileLoad: true; speed: 10; threshold: -90" wasd-controls="fly: true; acceleration: 0.2" animation__start="property: position; from: 0 1.6 30; to: 0 1.6 1; dur: 3000;" position="0 1.6 0" far="1000" fov="100">
+        <a-image data-raycastable src="#Menu" width="0.35" height="0.35" position="0 0.025 -0.5" animation="property: position; to: 0 0 1; startEvents: mousedown; dur: 100"></a-image>
+      </a-entity>
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: [data-raycastable]"></a-entity>
 
 <!-- REMOVED DUE TO POOR PERFORMANCE ON PHONES -->
       <!-- <a-entity id="outerBoundary" geometry="primitive: sphere; radius: 10" material="shader: noise;side: back; color: #ff0080" position="0 2 -2" scale="1 1 1" rotation="0 0 0"></a-entity> -->
@@ -61,18 +70,18 @@
       <a-entity light="type: ambient; color: #ffffff; intensity: 2"></a-entity>
 
 <!-- Links -->
-      <a-link href="https://mingxuan.fun/" title="Mingxuan Xie" image="#Mingxuan" position="0 1.5 50"></a-link>
+      <!-- <a-link href="https://mingxuan.fun/" title="Mingxuan Xie" image="#Mingxuan" position="0 1.5 50"></a-link> -->
 
 <!-- Images -->
-      <a-image id="redCross" src="#RedCross" width="0.5" height="0.5" hypermove position="2 2 2"></a-image>
-      <a-image id="un2814" src="#Un2814" width="2" height="1" hypermove position="3.52435 3.48037 7.24453" rotation="25.449066386325775 -130.33586627856454 11.270079830223294"></a-image>
-      <a-image id="angloSaxonMission" src="#AngloSaxonMission" width="2" height="1" hypermove position="-4.225557835819129 0.49249678056709395 -2.811250345459088" rotation="0 40.985 0"></a-image>      
-      <a-image id="cloudExhibition" src="#CloudExhibition" width="1" height="0.5"  position="0 1.8 -0.6" rotation="39.99188114233633 9.754606462102267 6.598181968726561"></a-image>   
-      <a-image id="huoShenShan" src="#HuoShenShan" width="6" height="9" hypermove position="9.42581754532398 3.7634069786448383 -4.735446317192447" rotation="-7.320108790591398 -105.92901012158174 -1.8053900124572242"></a-image>
-      <a-image id="leiShenShan" src="#LeiShenShan" width="4" height="6" hypermove position="-5 2 0" rotation="17.541675855725284 78.9043097986462 -9.31858558000771"></a-image>
+      <a-image id="redCross" src="#RedCross" width="0.5" height="0.5" hypermove look-at="[camera]" position="2 2 2"></a-image>
+      <a-image id="un2814" src="#Un2814" width="2" height="1" hypermove look-at="[camera]" position="3.52435 3.48037 7.24453" rotation="25.449066386325775 -130.33586627856454 11.270079830223294"></a-image>
+      <a-image id="angloSaxonMission" src="#AngloSaxonMission" width="2" height="1" hypermove look-at="[camera]" position="-4.225557835819129 0.49249678056709395 -2.811250345459088" rotation="0 40.985 0"></a-image>      
+      <a-image id="cloudExhibition" src="#CloudExhibition" width="1" height="0.5" look-at="[camera]" position="0 1.8 -0.6" rotation="39.99188114233633 9.754606462102267 6.598181968726561"></a-image>   
+      <a-image id="huoShenShan" src="#HuoShenShan" width="6" height="9" hypermove look-at="[camera]" position="9.42581754532398 3.7634069786448383 -4.735446317192447" rotation="-7.320108790591398 -105.92901012158174 -1.8053900124572242"></a-image>
+      <a-image id="leiShenShan" src="#LeiShenShan" width="4" height="6" hypermove look-at="[camera]" position="-5 2 0" rotation="17.541675855725284 78.9043097986462 -9.31858558000771"></a-image>
 
 <!-- Models -->
-      <a-entity id="medicalDancing1" gltf-model="#MedicalDancing" animation-mixer="" scale="3.655 3.6553 3.6553" position="3.34737 2.1126 -4.9648" rotation=""></a-entity>
+      <a-entity id="medicalDancing1" gltf-model="#MedicalDancing" animation-mixer="" scale="3.655 3.6553 3.6553" position="4.37816 2.62462 -3.34723" rotation="0 0 6.731681134992042"></a-entity>
       <a-entity id="medicalDancing2" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.6553 3.6553" position="-2.08239 5.25038 -7.60427" rotation="142.567 0.01 0"></a-entity>
       <a-entity id="medicalDancing3" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.655 3.6553" position="6.62859 5.80145 0.99846" rotation="39.28771601212055 -112.22982699463539 24.10777218792452"></a-entity>
       <a-entity id="medicalDancing4" gltf-model="#MedicalDancing" animation-mixer="" scale="3.6553 3.655 3.6553" position="-3.08676 -0.13826 3.60381" rotation="4.5263665815335035 148.092974265259 -87.0426023206844"></a-entity>
@@ -87,9 +96,7 @@
       <a-entity id="covid19Unfolded" gltf-model="#Covid19Unfolded" position="-3.76191 -6.57407 -5.75644" scale="6 6 6" rotation=""></a-entity>
       <a-entity id="covid19Unfolding" gltf-model="#Covid19Unfolding" animation="property: position; to: 6 -3 -7; loop: true; round: true; dur: 3000" position="6.86533 -3.64713 -8.00487" rotation="10.534402021275316 -37.411279233067106 43.4691620009853" scale="6.23223 6.23223 6.23281"></a-entity>
       <a-entity id="liwenliang" gltf-model="#LiWenLiang" animation="property: position; to: -1.96229 -0.69633 5.35524; loop: true; dir: alternate; dur: 9000" position="-1.81623 0.3 5.22085" rotation="32.73365179361906 154.72897144846425 -4.845504073421372" scale="2.80541 2.80588 2.80588"></a-entity>
-
     </a-scene>
-
   </body>
 
 </html>
