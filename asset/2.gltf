@@ -685,10 +685,10 @@
   ],
   "images": [
     {
-      "uri": "https://aframe.io/a-painter/assets/images/brush_atlas.png"
+      "uri": "brush_atlas.png"
     },
     {
-      "uri": "https://aframe.io/a-painter/assets/images/brush_atlas.png"
+      "uri": "brush_atlas.png"
     }
   ]
 }
